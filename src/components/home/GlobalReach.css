@@ -1,0 +1,202 @@
+.global-reach-section {
+    position: relative;
+    padding: 120px 0;
+    background: #0b111a;
+    /* Dark Navy base */
+    color: white;
+    overflow: hidden;
+}
+
+.map-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Gradient Fade Overlay */
+.global-reach-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, transparent 40%, #0b111a 90%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.global-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.global-header {
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.global-header .subtitle {
+    color: var(--accent);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.global-header h2 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    background: linear-gradient(to right, #fff, #aabbc9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.global-header p {
+    font-size: 1.25rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 16px;
+    min-width: 200px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.stat-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.stat-icon {
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.stat-item h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.stat-item p {
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Pulsing Hotspots on Map - Approximate Positions */
+.pulse-point {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--accent);
+    z-index: 1;
+}
+
+.pulse-point::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+    animation: radar 2s infinite linear;
+}
+
+/* Approximate % based positioning on world map bg */
+.p-usa {
+    top: 35%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.p-eu {
+    top: 30%;
+    left: 52%;
+    animation-delay: 0.5s;
+}
+
+.p-uae {
+    top: 42%;
+    left: 60%;
+    animation-delay: 0.8s;
+}
+
+.p-asia {
+    top: 45%;
+    left: 75%;
+    animation-delay: 1.2s;
+}
+
+.p-aus {
+    top: 75%;
+    left: 85%;
+    animation-delay: 1.5s;
+}
+
+@keyframes radar {
+    0% {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 300%;
+        height: 300%;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .global-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .stats-container {
+        gap: 20px;
+    }
+
+    .stat-item {
+        width: 100%;
+    }
+
+    .pulse-point {
+        display: none;
+    }
+
+    /* Hide dots on mobile if map is cropped/wrong */
+}

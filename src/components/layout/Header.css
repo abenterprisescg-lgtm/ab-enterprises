@@ -1,0 +1,144 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: transparent;
+    padding: 20px 0;
+    color: var(--bg-white);
+}
+
+.header.scrolled {
+    background: rgba(26, 38, 55, 0.95);
+    /* Primary color with transparency */
+    backdrop-filter: blur(12px);
+    padding: 15px 0;
+    box-shadow: var(--shadow-md);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.brand-logo {
+    height: 85px;
+    /* Significant increase from 50px */
+    width: auto;
+    object-fit: contain;
+    /* Original Color Retained */
+    transition: height 0.4s ease;
+    padding: 2px;
+}
+
+.header.scrolled .brand-logo {
+    height: 60px;
+    /* Compress slightly on scroll */
+}
+
+.desktop-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: relative;
+    opacity: 0.9;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    opacity: 1;
+    color: var(--accent);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-btn {
+    background: transparent;
+    color: var(--bg-white);
+    transition: transform 0.2s;
+}
+
+.search-btn:hover {
+    transform: scale(1.1);
+}
+
+.quote-btn {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+}
+
+.mobile-toggle {
+    display: none;
+    background: transparent;
+    color: var(--bg-white);
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--primary);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: var(--shadow-lg);
+}
+
+.mobile-link {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--bg-white);
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    .brand-logo {
+        height: 80px !important;
+    }
+}

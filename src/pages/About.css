@@ -1,0 +1,317 @@
+.about-page {
+    /* Header space handled by global or component specific padding if needed, 
+       but since hero handles it, we might need padding-top: 0 if header overlays */
+    background: var(--bg-body);
+}
+
+/* Hero Section */
+.about-hero {
+    min-height: 75vh;
+    height: auto;
+    background: linear-gradient(rgba(26, 38, 55, 0.7), rgba(26, 38, 55, 0.5)), url('/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 280px;
+    padding-bottom: 100px;
+    /* Accounts for fixed header */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-hero h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Story Section */
+.story-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.story-text h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.story-divider {
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    margin-bottom: 30px;
+}
+
+.story-text p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.lead-text {
+    font-size: 1.3rem !important;
+    font-weight: 500;
+    color: var(--primary) !important;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.stat-card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s;
+    border: 1px solid #eee;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    background: white;
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent);
+}
+
+.stat-card h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--accent);
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Leadership Section */
+.leadership-section {
+    padding: 100px 0;
+    background: #f4f6f8;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.leaders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.leader-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.4s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.leader-img-container {
+    height: 400px;
+    overflow: hidden;
+    background: #e0e0e0;
+}
+
+.leader-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+    /* Scale slightly to crop border artifacts */
+    transform: scale(1.03);
+}
+
+.leader-card:hover .leader-img-container img {
+    transform: scale(1.08);
+    /* Increased to maintain relative zoom effect */
+}
+
+.leader-info {
+    padding: 30px;
+}
+
+.leader-info h3 {
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.designation {
+    display: inline-block;
+    background: rgba(242, 101, 34, 0.1);
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.leader-info p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Vision Banner */
+.vision-banner {
+    background: var(--primary);
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add a metallic sheen overlay */
+.vision-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 45%, rgba(255, 255, 255, 0.05) 50%, transparent 55%);
+    pointer-events: none;
+}
+
+.vision-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.vision-icon {
+    margin-bottom: 20px;
+    color: var(--accent);
+}
+
+.vision-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.vision-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+/* Why Us Section */
+.why-us-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+
+.feature-card:hover {
+    border-color: #eee;
+    background: #fafafa;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(26, 38, 55, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    color: var(--primary);
+}
+
+.feature-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-hero {
+        padding-top: 160px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+}

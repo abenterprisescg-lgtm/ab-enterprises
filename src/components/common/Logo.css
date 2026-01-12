@@ -1,0 +1,34 @@
+/* Logo Animations */
+
+/* 1. The Continuous Pulse & Glow */
+.logo-container .brand-logo {
+    /* Inherit base transitions */
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    will-change: filter, transform;
+    animation: pulse-gold 4s infinite ease-in-out;
+}
+
+@keyframes pulse-gold {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 0px transparent);
+        transform: scale(1);
+    }
+
+    50% {
+        /* Glow with the brand Gold/Orange color */
+        filter: drop-shadow(0 0 15px rgba(255, 180, 0, 0.8));
+        transform: scale(1.03);
+    }
+}
+
+/* 2. Hover Interaction - Enhance Scale & Tilt */
+.logo-container:hover .brand-logo {
+    filter: drop-shadow(0 0 20px rgba(255, 180, 0, 0.9)) !important;
+    transform: scale(1.1) rotate(2deg) !important;
+    animation: none;
+    /* Stop the pulse on hover to keep it steady */
+}
+
+/* 3. Sheen Effect Wrapper (Optional, requires structure change, sticking to simple CSS for now) */

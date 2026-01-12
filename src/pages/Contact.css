@@ -1,0 +1,68 @@
+.contact-page {
+    /* No padding top so header overlays the hero */
+    background: var(--bg-body);
+}
+
+.contact-hero {
+    min-height: 75vh;
+    background: linear-gradient(rgba(26, 38, 55, 0.85), rgba(26, 38, 55, 0.7)), url('/steel_rolling.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 140px;
+    /* Reduced from 280px to fix gap */
+    padding-bottom: 100px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contact-hero h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-hero p {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 400;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.contact-split-section {
+    padding: 60px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+}
+
+@media (max-width: 900px) {
+    .contact-hero {
+        padding: 160px 0 60px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.map-section {
+    margin-top: 40px;
+    background: #eee;
+}
+
+/* Custom Grayscale Map Filter for "Industrial Look" */
+.map-section iframe {
+    display: block;
+}

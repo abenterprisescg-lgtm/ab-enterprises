@@ -1,0 +1,119 @@
+.steel-journey-container {
+    height: 300vh;
+    /* 3 screens worth of scroll space */
+    position: relative;
+    background: #000;
+}
+
+.sticky-wrapper {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.journey-stage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.journey-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    /* Darken for text readability */
+    filter: brightness(0.6);
+    z-index: 1;
+    transform: scale(1.05);
+    /* Slight scale for luxury feel */
+}
+
+.journey-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    width: 100%;
+}
+
+.text-block {
+    max-width: 600px;
+}
+
+.text-block .chapter {
+    display: block;
+    color: var(--accent);
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.text-block h2 {
+    font-size: 4rem;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.text-block p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Indicators */
+.journey-indicators {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 200px;
+    z-index: 10;
+}
+
+.indicator-track {
+    width: 4px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.indicator-fill {
+    width: 100%;
+    background: var(--accent);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .text-block h2 {
+        font-size: 2.5rem;
+    }
+
+    .text-block p {
+        font-size: 1.1rem;
+    }
+
+    .journey-indicators {
+        display: none;
+        /* Hide on mobile to save space */
+    }
+}

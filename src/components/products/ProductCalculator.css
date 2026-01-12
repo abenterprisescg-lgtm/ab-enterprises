@@ -1,0 +1,108 @@
+.product-calculator-container {
+    background: rgba(30, 30, 30, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.calculator-header h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color: #ffd;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.premium-select,
+.premium-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+.premium-select option {
+    background: #222;
+    color: #fff;
+}
+
+.premium-select:hover,
+.premium-input:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.calc-grid-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.specs-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.spec-summary-item {
+    font-size: 0.85rem;
+    color: #ccc;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.spec-summary-item .label {
+    color: #aaa;
+    margin-right: 5px;
+}
+
+.spec-summary-item .value {
+    color: #fff;
+    font-weight: 600;
+}
+
+.calculation-zone {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.result-value {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.result-label {
+    color: #dfdfdf;
+}
+
+.copy-btn {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+}
+
+.copy-btn:hover:not(:disabled) {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}

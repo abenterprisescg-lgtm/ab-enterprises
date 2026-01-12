@@ -1,0 +1,133 @@
+.services-page {
+    background: var(--bg-body);
+}
+
+.services-hero {
+    min-height: 75vh;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(26, 38, 55, 0.8)), url('/steel_molten.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding-top: 280px;
+    padding-bottom: 100px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.services-hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    margin-bottom: 25px;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.services-hero-content p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 1;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+}
+
+.services-grid-section {
+    padding: 100px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.service-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border-bottom: 4px solid transparent;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+    border-bottom-color: var(--accent);
+}
+
+.service-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: rgba(26, 38, 55, 0.05);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    margin-bottom: 25px;
+    transition: all 0.3s;
+}
+
+.service-card:hover .service-icon-wrapper {
+    background: var(--primary);
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.service-cta {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.service-cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.service-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.service-cta .btn {
+    background: var(--accent);
+    border: none;
+    color: white;
+}
+
+.service-cta .btn:hover {
+    background: white;
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .services-hero {
+        padding-top: 160px;
+    }
+
+    .services-hero-content h1 {
+        font-size: 2.5rem;
+    }
+}

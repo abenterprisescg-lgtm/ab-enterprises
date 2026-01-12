@@ -1,0 +1,242 @@
+.product-explorer {
+    display: flex;
+    min-height: 80vh;
+    padding-top: var(--header-height);
+    background-color: var(--bg-body);
+}
+
+.pe-sidebar {
+    width: 280px;
+    background: var(--bg-white);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    height: calc(100vh - var(--header-height));
+    position: sticky;
+    top: var(--header-height);
+    overflow-y: auto;
+}
+
+.pe-filters h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.filter-group {
+    margin-bottom: 30px;
+}
+
+.filter-group h4 {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.filter-group ul {
+    list-style: none;
+}
+
+.filter-group li {
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.2s;
+    color: var(--text-main);
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.filter-group li:hover {
+    background: var(--bg-body);
+    color: var(--accent);
+}
+
+.filter-group li.active {
+    background: rgba(242, 101, 34, 0.1);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.filter-group li .arrow {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.filter-group li.active .arrow,
+.filter-group li:hover .arrow {
+    opacity: 1;
+}
+
+.filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.pe-content {
+    flex: 1;
+    padding: 30px 40px;
+}
+
+.pe-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.pe-header h2 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.pe-search {
+    padding: 12px 20px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+}
+
+.pe-search:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(242, 101, 34, 0.1);
+}
+
+.pe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background: var(--bg-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(242, 101, 34, 0.3);
+}
+
+.pc-image-placeholder {
+    height: 180px;
+    background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pc-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.pc-category {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pc-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+.pc-specs {
+    display: flex;
+    gap: 15px;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.pc-meta {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.pc-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.pc-stock {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+}
+
+.pc-stock.high {
+    color: #10B981;
+}
+
+.pc-stock.medium {
+    color: #F59E0B;
+}
+
+.pc-stock.low {
+    color: #EF4444;
+}
+
+.stock-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+.pc-btn {
+    width: 100%;
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    .product-explorer {
+        flex-direction: column;
+    }
+
+    .pe-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+    }
+}
