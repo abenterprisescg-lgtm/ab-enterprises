@@ -91,11 +91,25 @@
 @media (max-width: 600px) {
     .testimonial-wrapper {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
+        position: relative;
+        padding-bottom: 60px;
     }
 
     .nav-btn {
-        display: none;
-        /* Swipe usually better on mobile, but keeping simple for now */
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        z-index: 10;
+        background: var(--bg-white);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-btn.prev {
+        left: 20%;
+    }
+
+    .nav-btn.next {
+        right: 20%;
     }
 }

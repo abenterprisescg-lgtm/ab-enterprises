@@ -308,12 +308,38 @@
     }
 
     .about-hero {
-        padding-top: 110px;
+        padding-top: 130px;
+        padding-bottom: 60px;
+        min-height: auto;
         /* Standardized mobile padding */
-        min-height: 60vh;
     }
 
     .about-hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .stats-grid,
+    .leaders-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .leader-img-container {
+        height: 320px;
+    }
+
+    .stat-card h3 {
         font-size: 2.5rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
     }
 }

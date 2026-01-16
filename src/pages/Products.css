@@ -130,12 +130,17 @@
 
 @media (max-width: 768px) {
     .products-hero {
-        padding: 110px 0 40px;
+        padding: 130px 0 60px;
         /* Standardized mobile padding */
     }
 
     .products-hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 20px;
     }
 }
 
