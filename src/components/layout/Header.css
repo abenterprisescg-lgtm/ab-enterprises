@@ -144,8 +144,8 @@
     }
 
     .brand-logo {
-        height: 60px !important;
-        /* Smaller logo for mobile */
+        height: 80px !important;
+        /* Increased to 80px as requested */
     }
 
     .header {
