@@ -226,7 +226,7 @@
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .clientele-hero {
-        padding-top: 110px;
+        padding-top: 100px;
         /* Reduced to clear header properly on mobile */
         min-height: 60vh;
     }

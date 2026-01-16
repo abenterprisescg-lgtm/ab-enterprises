@@ -303,23 +303,23 @@
 /* Responsive */
 @media (max-width: 900px) {
     .story-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 40px;
     }
 
     .about-hero {
-        padding-top: 130px;
+        padding-top: 100px;
         padding-bottom: 60px;
         min-height: auto;
-        /* Standardized mobile padding */
     }
 
     .about-hero h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     .stats-grid,
     .leaders-grid,
@@ -327,19 +327,33 @@
         grid-template-columns: 1fr;
     }
 
+    .stat-card {
+        padding: 20px;
+        /* Reduce padding on mobile */
+    }
+
+    .vision-content p {
+        font-size: 1.1rem;
+        /* Smaller vision text */
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
     .about-hero h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     .leader-img-container {
-        height: 320px;
+        height: 280px;
+        /* Smaller images */
     }
 
     .stat-card h3 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .section-header h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }

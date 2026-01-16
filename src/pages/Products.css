@@ -130,17 +130,31 @@
 
 @media (max-width: 768px) {
     .products-hero {
-        padding: 130px 0 60px;
+        padding: 100px 0 60px;
         /* Standardized mobile padding */
     }
 
     .products-hero h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     .products-grid {
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         gap: 20px;
+    }
+
+    .category-tabs {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 1.5rem;
+        padding: 0 10px;
+    }
+
+    .cat-tab {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.8rem;
+        flex: 1 1 auto;
+        text-align: center;
     }
 }
 
