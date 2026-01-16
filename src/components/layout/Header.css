@@ -139,8 +139,8 @@
     }
 
     .quote-btn {
-        display: none;
-        /* Hide on mobile to save space */
+        display: none !important;
+        /* Hide on mobile to save space - FIXED */
     }
 
     .brand-logo {
