@@ -1,0 +1,256 @@
+/* Clientele Page Styles */
+.clientele-page {
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+/* Hero Section */
+.clientele-hero {
+    position: relative;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    padding-top: 140px;
+    padding-bottom: 100px;
+}
+
+.clientele-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/steel_structure.png');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    z-index: 0;
+}
+
+.clientele-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.8));
+    z-index: 1;
+}
+
+.clientele-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.clientele-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: -1px;
+}
+
+.clientele-hero p {
+    font-size: 1.25rem;
+    color: #e2e8f0;
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Clients Grid Section */
+.clients-section {
+    padding: 80px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: #2563eb;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.client-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    height: 240px;
+}
+
+.logo-container {
+    width: 180px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.client-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transform: scale(1.5);
+}
+
+.fallback-initial {
+    display: none;
+    width: 80px;
+    height: 80px;
+    background: #eff6ff;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.client-name {
+    font-size: 1.2rem;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.client-industry {
+    font-size: 0.9rem;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* Sectors Section */
+.sectors-section {
+    background: white;
+    padding: 80px 0;
+}
+
+.sectors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.sector-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.sector-icon-wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sector-icon-bg {
+    background: #eff6ff;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.sector-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+.sector-desc {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background: #1e293b;
+    color: white;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-desc {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.cta-btn {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .clientele-hero {
+        padding-top: 110px;
+        /* Reduced to clear header properly on mobile */
+        min-height: 60vh;
+    }
+
+    .clientele-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .clientele-hero p {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .clients-grid {
+        grid-template-columns: 1fr;
+        /* Single column on mobile */
+        gap: 20px;
+    }
+
+    .sectors-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+}

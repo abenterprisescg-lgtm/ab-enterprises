@@ -130,7 +130,8 @@
 
 @media (max-width: 768px) {
     .products-hero {
-        padding: 160px 0 40px;
+        padding: 110px 0 40px;
+        /* Standardized mobile padding */
     }
 
     .products-hero h1 {

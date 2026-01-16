@@ -308,7 +308,9 @@
     }
 
     .about-hero {
-        padding-top: 160px;
+        padding-top: 110px;
+        /* Standardized mobile padding */
+        min-height: 60vh;
     }
 
     .about-hero h1 {
