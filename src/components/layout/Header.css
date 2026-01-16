@@ -145,7 +145,11 @@
 
     .brand-logo {
         height: 80px !important;
-        /* Increased to 80px as requested */
+        max-height: 80px;
+        width: auto;
+        min-width: 120px;
+        /* Ensure it doesn't shrink */
+        object-fit: contain;
     }
 
     .header {
