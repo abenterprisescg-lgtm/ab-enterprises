@@ -8,7 +8,7 @@
 .about-hero {
     min-height: 75vh;
     height: auto;
-    background: linear-gradient(rgba(26, 38, 55, 0.7), rgba(26, 38, 55, 0.5)), url('/hero.png');
+    background: linear-gradient(rgba(26, 38, 55, 0.7), rgba(26, 38, 55, 0.5)), url('/hero.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

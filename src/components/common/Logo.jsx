@@ -5,7 +5,7 @@ const Logo = ({ className = "", light = false }) => {
     return (
         <div className={`logo-container ${className}`} style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <img
-                src="/ab-logo-v2.png"
+                src="/ab-logo-v2.webp"
                 alt="AB Enterprises"
                 className="brand-logo"
                 style={{

@@ -5,7 +5,7 @@ import './GlobalReach.css';
 const GlobalReach = () => {
     return (
         <section className="global-reach-section">
-            <div className="map-background" style={{ backgroundImage: "url('/world_map_dots.png')" }}>
+            <div className="map-background" style={{ backgroundImage: "url('/world_map_dots.webp')" }}>
                 {/* Visual Pulse Points representing export hubs */}
                 <div className="pulse-point p-usa" title="North America"></div>
                 <div className="pulse-point p-eu" title="Europe"></div>

@@ -4,7 +4,7 @@
 }
 
 .cert-hero {
-    background: linear-gradient(rgba(26, 38, 55, 0.9), rgba(26, 38, 55, 0.8)), url('/world_map_dots.png');
+    background: linear-gradient(rgba(26, 38, 55, 0.9), rgba(26, 38, 55, 0.8)), url('/world_map_dots.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

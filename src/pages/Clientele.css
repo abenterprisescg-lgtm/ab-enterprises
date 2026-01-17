@@ -24,7 +24,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('/assets/steel_structure.png');
+    background-image: url('/steel_structure.webp');
     background-size: cover;
     background-position: center;
     filter: brightness(0.4);

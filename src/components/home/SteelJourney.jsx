@@ -25,7 +25,7 @@ const SteelJourney = () => {
 
                 {/* Stage 1: The Forge */}
                 <motion.div className="journey-stage" style={{ opacity: opacity1 }}>
-                    <div className="journey-bg" style={{ backgroundImage: "url('/steel_molten.png')" }}></div>
+                    <div className="journey-bg" style={{ backgroundImage: "url('/steel_molten.webp')" }}></div>
                     <div className="journey-content container">
                         <motion.div style={{ y: y1 }} className="text-block">
                             <span className="chapter">Stage 01</span>
@@ -37,7 +37,7 @@ const SteelJourney = () => {
 
                 {/* Stage 2: Precision Rolling */}
                 <motion.div className="journey-stage" style={{ opacity: opacity2 }}>
-                    <div className="journey-bg" style={{ backgroundImage: "url('/steel_rolling.png')" }}></div>
+                    <div className="journey-bg" style={{ backgroundImage: "url('/steel_rolling.webp')" }}></div>
                     <div className="journey-content container">
                         <motion.div style={{ y: y2 }} className="text-block">
                             <span className="chapter">Stage 02</span>
@@ -49,7 +49,7 @@ const SteelJourney = () => {
 
                 {/* Stage 3: The Structure */}
                 <motion.div className="journey-stage" style={{ opacity: opacity3 }}>
-                    <div className="journey-bg" style={{ backgroundImage: "url('/steel_structure.png')" }}></div>
+                    <div className="journey-bg" style={{ backgroundImage: "url('/steel_structure.webp')" }}></div>
                     <div className="journey-content container">
                         <motion.div style={{ y: y3 }} className="text-block">
                             <span className="chapter">Stage 03</span>

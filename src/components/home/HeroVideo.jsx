@@ -55,7 +55,7 @@ const HeroVideo = () => {
                 autoPlay
                 muted
                 playsInline
-                preload="auto"
+                preload="metadata"
                 onLoadedMetadata={handleVideo1Loaded}
                 onEnded={handleVideo1Ended}
             >
@@ -67,7 +67,7 @@ const HeroVideo = () => {
                 className={`hero-video ${currentVideo === 2 ? 'active' : 'inactive'}`}
                 muted
                 playsInline
-                preload="auto"
+                preload="none"
                 onEnded={handleVideo2Ended}
             >
                 <source src="/video2.mp4" type="video/mp4" />

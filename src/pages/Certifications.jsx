@@ -10,7 +10,7 @@ const Certifications = () => {
             title: "ISO 9001:2015 Certified",
             issuer: "International Organization for Standardization",
             description: "Certified Quality Management System for Trading and Export of Steel Products.",
-            image: "/cert_iso_ab.png",
+            image: "/cert_iso_ab.webp",
             icon: <ShieldCheck size={32} />
         },
         {
@@ -18,7 +18,7 @@ const Certifications = () => {
             title: "Authorized Dealer",
             issuer: "Ganpati Ispat Pvt Ltd",
             description: "Official authorized dealer for Ganpati Ispat steel products across the region.",
-            image: "/cert_ganpati_dealer.png",
+            image: "/cert_ganpati_dealer.webp",
             icon: <Award size={32} />
         },
         {
@@ -26,7 +26,7 @@ const Certifications = () => {
             title: "Authorized Distributor",
             issuer: "Sindh Ispat",
             description: "Premium authorized distributor partner for Sindh Ispat structural steel.",
-            image: "/cert_sindh_distributor.png",
+            image: "/cert_sindh_distributor.webp",
             icon: <CheckCircle size={32} />
         }
     ];
