@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Building2, Handshake, Users, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/common/SEO';
 import './Clientele.css';
 
 const Clientele = () => {
@@ -41,6 +42,10 @@ const Clientele = () => {
 
     return (
         <div className="clientele-page">
+            <SEO
+                title="Our Clientele | Trusted by India's Construction Giants"
+                description="We are proud partners to L&T, Tata Projects, UltraTech, and Godrej Properties. See why industry leaders trust AB Enterprises for their steel needs."
+            />
             {/* Hero Section */}
             <section className="clientele-hero">
                 <div className="clientele-bg"></div>

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Printer, Phone, Mail, Globe, MapPin, Anchor, Box, Layers, Zap } from 'lucide-react';
 import './Brochure.css';
 import Logo from '../components/common/Logo';
+import SEO from '../components/common/SEO';
 
 // Product Data for Showcase
 const rawMaterials = [
@@ -26,7 +27,10 @@ const Brochure = () => {
 
     return (
         <div className="brochure-page">
-
+            <SEO
+                title="Company Brochure | AB Enterprises"
+                description="Download the AB Enterprises digital brochure. Explore our full range of products, services, and our journey of 35+ years in the steel industry."
+            />
             {/* === 1. Cover Section === */}
             <section className="brochure-section brochure-cover">
                 <motion.div

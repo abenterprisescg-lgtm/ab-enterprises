@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import ContactInfo from '../components/contact/ContactInfo';
+import SEO from '../components/common/SEO';
 import ContactForm from '../components/contact/ContactForm';
 import './Contact.css';
 
@@ -12,6 +13,10 @@ const Contact = () => {
     return (
         <div className="contact-page">
             {/* Mini Hero */}
+            <SEO
+                title="Contact Us | Get a Quote for Steel"
+                description="Contact AB Enterprises for instant quotes on TMT bars, structural steel, and raw materials. Visit our Raipur yard or call our sales team."
+            />
             <section className="contact-hero">
                 <div className="container">
                     <div className="hero-content">

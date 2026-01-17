@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Award, TrendingUp, Users, Truck, CheckCircle, Target } from 'lucide-react';
 import './About.css';
+import SEO from '../components/common/SEO';
 
 const About = () => {
     useEffect(() => {
@@ -36,6 +37,10 @@ const About = () => {
     return (
         <div className="about-page">
             {/* Hero Section */}
+            <SEO
+                title="About Us | 35+ Years in Steel Trading"
+                description="Since 1990, AB Enterprises has been a trusted leader in the steel industry. Learn about our legacy, vision, and the team driving India's infrastructure forward."
+            />
             <section className="about-hero">
                 <div className="container">
                     <motion.div

@@ -4,6 +4,7 @@ import { Search, Filter, ArrowRight } from 'lucide-react';
 import { useLocation } from 'react-router-dom';
 import { products } from '../data/products';
 import ProductModal from '../components/products/ProductModal';
+import SEO from '../components/common/SEO';
 import './Products.css';
 
 const Products = () => {
@@ -63,6 +64,10 @@ const Products = () => {
 
     return (
         <div className="products-page">
+            <SEO
+                title={`${activeCategory === 'finished' ? 'Structural Steel & TMT Bars' : 'Industrial Raw Materials'} | Product Catalog`}
+                description="Explore our comprehensive range of steel products including TMT bars, angles, beams, channels, and industrial raw materials like iron ore and coal."
+            />
             {/* Hero Section */}
             <section className="products-hero">
                 <div className="container">

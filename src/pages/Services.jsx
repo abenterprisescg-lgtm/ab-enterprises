@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Truck, Scissors, FileCheck, HardHat, TrendingUp, ShieldCheck } from 'lucide-react';
 import './Services.css';
+import SEO from '../components/common/SEO';
 
 const Services = () => {
     useEffect(() => {
@@ -43,6 +44,10 @@ const Services = () => {
     return (
         <div className="services-page">
             {/* Hero Section */}
+            <SEO
+                title="Steel Processing & Logistics Services"
+                description="Beyond trading, we offer precision logistics, custom sizing, and quality assurance. Discover how we add value to your steel supply chain."
+            />
             <section className="services-hero">
                 <div className="container">
                     <div className="services-hero-content">

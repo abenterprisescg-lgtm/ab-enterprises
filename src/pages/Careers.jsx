@@ -1,10 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, Send } from 'lucide-react';
+import SEO from '../components/common/SEO';
 
 const Careers = () => {
     return (
         <div style={{ minHeight: '80vh', background: '#f8fafc' }}>
+            <SEO
+                title="Careers at AB Enterprises | Join Our Team"
+                description="Join India's most dynamic steel trading company. We are looking for talented sales executives and logistics managers."
+            />
             <section className="page-hero">
                 <div className="container">
                     <motion.div
@@ -41,7 +46,7 @@ const Careers = () => {
                             <p>
                                 If you believe you can add value to AB Enterprises, please drop your CV at:
                             </p>
-                            <a href="mailto:careers@abent.in" style={{
+                            <a href="mailto:careers@ab-enterprises.co" style={{
                                 display: 'inline-flex',
                                 alignItems: 'center',
                                 gap: '8px',
@@ -50,7 +55,7 @@ const Careers = () => {
                                 textDecoration: 'none',
                                 fontSize: '1.1rem'
                             }}>
-                                <Send size={18} /> careers@abent.in
+                                <Send size={18} /> careers@ab-enterprises.co
                             </a>
                         </div>
                     </div>
