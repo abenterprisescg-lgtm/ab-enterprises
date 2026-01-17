@@ -3,81 +3,92 @@ export const blogPosts = [
         id: 1,
         slug: 'steel-prices-india-2026-forecast',
         title: 'Steel Prices in India 2026: Market Forecast & Trends',
-        excerpt: 'An in-depth analysis of steel price trends in Q1 2026, influenced by global raw material costs and domestic infrastructure demand.',
+        excerpt: 'India\'s steel demand is projected to grow by 8-9% in 2026, driven by massive infrastructure spending. We analyze the impact of import pressures and raw material costs on pricing.',
         content: `
-            <h2>Understanding the 2026 Steel Market</h2>
-            <p>The Indian steel industry is witnessing a dynamic shift in early 2026. With the government's continued push on infrastructure projects like the <strong>Bharatmala Pariyojana</strong> and expansive metro networks, domestic demand has reached an all-time high.</p>
+            <h2>The 2026 Milestone: Demand Outpacing Global Averages</h2>
+            <p>The Indian steel industry stands as a global outlier in 2026. While western markets face stagnation, <strong>India’s steel demand is projected to grow by 8-9%</strong> this fiscal year. This robust growth is not accidental; it is structurally driven by the government's aggressive capital expenditure on infrastructure.</p>
             
-            <h3>Key Factors Driving Prices</h3>
+            <h3>Infrastructure: The Backbone of Demand</h3>
+            <p>Approximately <strong>65% of domestic steel consumption</strong> is now directly linked to construction and infrastructure projects. Key drivers include:</p>
             <ul>
-                <li><strong>Raw Material volatile:</strong> Iron ore prices have seen a 15% fluctuation in the last quarter due to global supply chain adjustments.</li>
-                <li><strong>Coal Import Costs:</strong> Changes in coking coal import duties have slightly increased production costs for secondary steel manufacturers.</li>
-                <li><strong>Green Steel Transition:</strong> As major players shift towards sustainable production, initial capital expenditures are being reflected in market rates.</li>
+                <li><strong>Gati Shakti Master Plan:</strong> Accelerating multi-modal connectivity projects across railways and roadways.</li>
+                <li><strong>Affordable Housing:</strong> The expansion of Pradhan Mantri Awas Yojana continues to consume millions of tons of long steel products.</li>
+                <li><strong>Urban Transit:</strong> New metro lines in Tier-2 cities are increasing the demand for specific high-tensile steel grades.</li>
             </ul>
 
-            <h3>Prediction for Q2 2026</h3>
-            <p>Experts suggest a <strong>stabilization period</strong> in the coming months. For construction companies, this indicates that <em>now</em> might be the strategic time to book bulk orders before the pre-monsoon construction rush begins.</p>
+            <h3>Price Sensitivity & Import Pressures</h3>
+            <p>Despite strong demand, domestic prices face resistance. A surge in competitively priced imports, particularly from China, has kept a lid on operating margins. For buyers, this creates a <strong>unique window of opportunity</strong>. With supply slightly outpacing demand due to capacity expansions by major players like Tata and JSW, prices are expected to remain stable yet competitive in Q1 2026.</p>
 
-            <blockquote>"Smart procurement is not just about the lowest price today, but securing supply for tomorrow." - Aditya Agrawal, Director, AB Enterprises</blockquote>
+            <h3>Strategic Advice for Developers</h3>
+            <p>With the threat of potential safeguard duties on imports looming later this year, experts suggest that <strong>locking in procurement contracts now</strong> could hedge against future price spikes. The current market offers a balance of high availability and reasonable pricing.</p>
+
+            <blockquote>"The Indian story is no longer about recovery; it's about leading global demand growth. We are building the future, quite literally, with steel." - Aditya Agrawal, Director, AB Enterprises</blockquote>
         `,
         date: 'January 15, 2026',
         author: 'Aditya Agrawal',
-        image: '/products/tmt.webp', // Focusing on products as hero images
+        image: '/blog/market-chart.png',
         category: 'Market Insights',
-        readTime: '4 min read',
-        tags: ['Steel Prices', 'Construction', 'Economy']
+        readTime: '6 min read',
+        tags: ['Steel Prices', 'Infrastructure', 'Economy', 'Market Forecast']
     },
     {
         id: 2,
         slug: 'tmt-bars-buying-guide',
-        title: 'TMT Bars vs. Ordinary Steel: A Builder\'s Guide',
-        excerpt: 'Why Fe 550D TMT bars are the non-negotiable choice for modern earthquake-resistant construction in India.',
+        title: 'Advanced TMT Technology: Beyond Standard Steel',
+        excerpt: 'From micro-alloying to seismic resistance, modern TMT bars are engineering marvels. Discover why Fe 550D is the new standard for Indian construction.',
         content: `
-            <h2>The Backpack of Your Building</h2>
-            <p>When it comes to structural integrity, the choice of reinforcement bars (rebars) is critical. Thermo-Mechanically Treated (TMT) bars have completely replaced traditional twisted bars, but do you know why?</p>
+            <h2>The Evolution of Reinforcement</h2>
+            <p>Gone are the days when steel was just "strong." Today's Thermo-Mechanically Treated (TMT) bars are the result of sophisticated metallurgical engineering. As we build higher vertically and spread wider across seismic zones, the technology inside your concrete matters more than ever.</p>
 
-            <h3>The Science of TMT</h3>
-            <p>TMT bars undergo a rapid cooling process that creates a unique structure: a hard outer layer (martensite) for strength and a soft inner core (ferrite-pearlite) for flexibility. This combination is what gives TMT bars their <strong>ductility</strong>.</p>
-
-            <h3>Why Fe 550D?</h3>
-            <p>The 'D' stands for <em>Ductility</em>. In seismic zones (like parts of Central and North India), flexibility is just as important as strength. Fe 550D bars can absorb sudden shocks (like earthquakes) without snapping, protecting the structure from collapse.</p>
-
-            <h3>Key Benefits</h3>
+            <h3>What Makes Modern TMT Superior?</h3>
+            <p>Recent advancements in Indian manufacturing have introduced <strong>Micro-Alloying</strong>. By adding minute quantities of elements like Vanadium and Niobium, manufacturers are achieving:</p>
             <ul>
-                <li><strong>Corrosion Resistance:</strong> Better bonding with concrete and resistance to rust.</li>
-                <li><strong>Fire Safety:</strong> Withstands temperatures up to 600°C without losing structural strength.</li>
-                <li><strong>Cost Efficiency:</strong> Higher strength means you need fewer bars compared to lower grades.</li>
+                <li><strong>Superior Ductility:</strong> The ability to stretch without breaking, crucial for earthquake resistance.</li>
+                <li><strong>Corrosion Resistance:</strong> New surface treatments are extending the lifespan of coastal structures by decades.</li>
+                <li><strong>Weldability:</strong> Low carbon content ensures that joints remain strong without becoming brittle.</li>
             </ul>
+
+            <h3>The Seismic Shift: Why Fe 550D?</h3>
+            <p>In 2026, <strong>Fe 550D</strong> has effectively become the baseline standard for serious construction. The "D" stands for Ductility. In an earthquake, a rigid building collapses; a building reinforced with Fe 550D sways and dissipates energy. For high-rise projects in zones 3, 4, and 5, this isn't just an option—it's a necessity.</p>
+
+            <h3>Smart Manufacturing</h3>
+            <p>Leading plants are now integrating <strong>AI and IoT sensors</strong> into the rolling process. This ensures that every millimeter of the bar is subjected to the exact same thermal treatment, guaranteeing uniform strength across the entire batch.</p>
+
+            <p><strong>Builder's Tip:</strong> Always verify the physical testing report for the specific batch you receive. High-quality distributors like AB Enterprises provide MTCs (Manufacturer Test Certificates) that trace the steel back to the exact furnace it was melted in.</p>
         `,
         date: 'January 10, 2026',
         author: 'Bhaskar Agrawal',
-        image: '/steel_structure.webp',
-        category: 'Technical Guide',
+        image: '/blog/tmt-construction.png',
+        category: 'Technology',
         readTime: '5 min read',
-        tags: ['TMT Bars', 'Civil Engineering', 'Safety']
+        tags: ['TMT Bars', 'Civil Engineering', 'Seismic Safety', 'Construction Tech']
     },
     {
         id: 3,
         slug: 'green-steel-sustainable-construction',
-        title: 'The Role of Green Steel in Sustainable Construction',
-        excerpt: 'How the steel industry is reducing its carbon footprint and what it means for eco-friendly construction projects.',
+        title: 'Green Steel: India\'s Path to Net-Zero Infrastructure',
+        excerpt: 'With new government mandates for FY28, Green Steel is moving from concept to reality. Learn about Hydrogen-DRI and what it means for your project\'s carbon footprint.',
         content: `
-            <h2>Building for a Greener Future</h2>
-            <p>Construction accounts for a significant portion of global emissions, but "Green Steel" is changing the narrative. Green Steel refers to steel manufactured without the use of fossil fuels, typically using green hydrogen or renewable energy sources.</p>
+            <h2>Decarbonizing the Hard-to-Abate</h2>
+            <p>Steel production has historically been carbon-intensive. But 2025-26 marks a turning point. India is actively deploying a multi-pronged strategy to slash emissions intensity from 2.55 to 2.20 tonnes of CO2 per tonne of steel by 2030.</p>
 
-            <h3>India's Green Push</h3>
-            <p>With the National Green Hydrogen Mission, Indian steel plants are upgrading their blast furnaces. This shift is crucial for developers aiming for <strong>LEED certification</strong> for their projects.</p>
+            <h3>The Hydrogen Revolution (H2-DRI)</h3>
+            <p>The biggest game-changer is <strong>Hydrogen-based Direct Reduced Iron (H2-DRI)</strong>. Instead of using coking coal to strip oxygen from iron ore, plants are beginning to use Green Hydrogen. The byproduct? Water vapor, not Carbon Dioxide.</p>
+            <p>Major pilot projects by industry giants in Karnataka and Odisha are already proving that fossil-free steel is possible at scale.</p>
 
-            <h3>Why It Matters to You</h3>
-            <p>Using sustainably sourced materials is no longer just a PR move; it's a requirement for many government and high-end private projects. As a forward-thinking distributor, AB Enterprises is actively expanding our portfolio to include low-carbon steel options.</p>
+            <h3>Policy Push: Green Procurement</h3>
+            <p>The government's <strong>Green Steel Public Procurement Policy</strong> is set to kick in by FY28. This will mandate that a percentage of steel used in national highways and public buildings must be low-carbon. For private developers, adopting Green Steel now is a way to future-proof assets and achieve <strong>LEED Platinum</strong> certification.</p>
 
-            <p>The future is not just about building strong; it's about building responsible.</p>
+            <h3>Why Sourcing Matters</h3>
+            <p>As we move towards a net-zero economy, the "embedded carbon" of a building will be as important as its operational energy use. Sourcing steel from mills that utilize Electric Arc Furnaces (EAF) and renewable energy is the first step.</p>
+
+            <p>At AB Enterprises, we are actively expanding our network to include suppliers who are at the forefront of this sustainable revolution.</p>
         `,
         date: 'January 05, 2026',
         author: 'Editorial Team',
-        image: '/hero.webp',
+        image: '/blog/green-steel.png',
         category: 'Sustainability',
-        readTime: '3 min read',
-        tags: ['Green Energy', 'Sustainability', 'Future Tech']
+        readTime: '4 min read',
+        tags: ['Green Steel', 'Sustainability', 'Net Zero', 'Hydrogen Energy']
     }
 ];
