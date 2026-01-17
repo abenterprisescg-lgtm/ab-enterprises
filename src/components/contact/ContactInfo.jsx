@@ -54,7 +54,10 @@ const ContactInfo = () => {
                     </div>
                     <div>
                         <h4>Email Us</h4>
-                        <a href="mailto:sales@abent.in" className="primary-link">sales@abent.in</a>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
+                            <a href="mailto:sales@ab-enterprises.co" className="primary-link">sales@ab-enterprises.co</a>
+                            <a href="mailto:support@ab-enterprises.co" className="primary-link">support@ab-enterprises.co</a>
+                        </div>
                         <p className="sub-text">We verify all B2B inquiries within 2 hours.</p>
                     </div>
                 </div>

@@ -174,7 +174,8 @@ const Brochure = () => {
                         <div className="contact-info-large">
                             <p><MapPin className="icon-gold" /> KH No.721/1, Rawabhata, Near Industrial Area, Raipur, CG</p>
                             <p><Phone className="icon-gold" /> +91 91118 80444</p>
-                            <p><Mail className="icon-gold" /> sales@abent.in</p>
+                            <p><Mail className="icon-gold" /> sales@ab-enterprises.co</p>
+                            <p><Mail className="icon-gold" /> support@ab-enterprises.co</p>
                             <p><Globe className="icon-gold" /> www.abenterprises.in</p>
                         </div>
 
