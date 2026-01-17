@@ -26,11 +26,12 @@ const Header = () => {
         { name: 'Services', path: '/services' },
         { name: 'About', path: '/about' },
         { name: 'Clientele', path: '/clientele' },
+        { name: 'News', path: '/news' },
         { name: 'Contact', path: '/contact' },
     ];
 
     // Pages that have a dark hero section where transparency works
-    const transparentHeaderPages = ['/', '/products', '/about', '/services', '/contact', '/careers', '/terms', '/clientele'];
+    const transparentHeaderPages = ['/', '/products', '/about', '/services', '/contact', '/careers', '/terms', '/clientele', '/news'];
     const isTransparentPage = transparentHeaderPages.includes(location.pathname);
 
     return (

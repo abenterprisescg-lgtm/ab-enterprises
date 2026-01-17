@@ -14,6 +14,9 @@ import Terms from './pages/Terms';
 import ChatWidget from './components/common/ChatWidget';
 
 import Brochure from './pages/Brochure';
+import News from './pages/News';
+import BlogPost from './pages/BlogPost';
+import './App.css';
 
 function App() {
   return (
@@ -29,6 +32,8 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/about" element={<About />} />
               <Route path="/clientele" element={<Clientele />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/news/:slug" element={<BlogPost />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="/contact" element={<Contact />} />
